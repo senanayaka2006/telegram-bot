@@ -6,14 +6,14 @@ from datetime import datetime
 # Logging සකසන්න
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Environment variables භාවිතා කරන්න
-TOKEN = os.environ['8357477482:AAEWeRNnFUl0TOncLTKS57dCQ3tajOqHir4']
-CHAT_IDS = os.environ['@hellobabe2006'].split(',')
+# Environment variables භාවිතා කරන්න - නිවැරදි version
+TOKEN = os.environ['8357477482:AAEWeRNnFUl0TOncLTKS57dCQ3tajOqHir4']  # ❌ os.environt -> ✅ os.environ
+CHAT_IDS = os.environ['hellobabe2006'].split(',')
 
 MESSAGES = [
-     "Hidden file unlocked 📂 Join to access → [https://rb.gy/r0nx6k]",
+    "Hidden file unlocked 📂 Join to access → [https://rb.gy/r0nx6k]",
     "New secret video just dropped 🔥 Only few people have seen this → [https://rb.gy/r0nx6k]",
-    "Exclusive content leaked 😱 Click here before it’s gone 👉 [https://otieu.com/4/9916786]",
+    "Exclusive content leaked 😱 Click here before it’s gone 👉 [https://otieu.com/4/9916786]"
 ]
 
 def send_telegram_message(chat_id, message):
