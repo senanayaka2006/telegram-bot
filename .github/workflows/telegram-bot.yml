@@ -1,13 +1,15 @@
 name: Telegram Auto Sender
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Manual run
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */2 * * *'  # පැය 2කට වරක්
+    - cron: '0 9 * * *'    # උදේ 9ට දිනපතා
 
 jobs:
   send-message:
     runs-on: ubuntu-latest
+    timeout-minutes: 5  # උපරිම 5 මිනිත්තුවක්
     
     steps:
     - name: Checkout code
