@@ -7,7 +7,7 @@ from datetime import datetime
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Environment variables භාවිතා කරන්න - නිවැරදි version
-TOKEN = os.environ['8357477482:AAEWeRNnFUl0TOncLTKS57dCQ3tajOqHir4']  # ❌ os.environt -> ✅ os.environ
+TOKEN = os.environ['8357477482:AAHFkHca7GaFiwqHvt5CftXLHPQLAj9m_cE']  # ❌ os.environt -> ✅ os.environ
 CHAT_IDS = os.environ['hellobabe2006'].split(',')
 
 MESSAGES = [
